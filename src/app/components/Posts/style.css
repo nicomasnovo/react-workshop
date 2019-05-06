@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif ;
+}
+
+.post-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post-item:nth-child(odd) {
+    background: #eee;
+}
+.post-item { 
+    border: 1px solid #eee;
+}
+
+.post-email {
+    font-weight: bold;
+}
+
+.empty-posts {
+    margin: 10px;
+    background: orange;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+}  
+
+input {
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding:10px;
+    border:1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 10px;
+}
