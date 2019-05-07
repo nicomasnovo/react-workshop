@@ -1,45 +1,44 @@
-body {
-    font-family: 'Arial', sans-serif ;
-}
-
-.post-wrapper {
+.user-wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    font-family: 'Arial', sans-serif;
 }
 
-.post-item {
+.user-item {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
 }
 
-.post-item:nth-child(odd) {
+.user-item:nth-child(odd) {
     background: #eee;
 }
-.post-item { 
+
+.user-item { 
     border: 1px solid #eee;
 }
 
-.post-email {
+.user-email {
     font-weight: bold;
 }
 
-.empty-posts {
+.empty-users {
     margin: 10px;
     background: orange;
     border-radius: 5px;
     padding: 10px;
-    max-width: 300px;
     text-align: center;
 }  
 
-input {
+.user-wrapper h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.user-wrapper input {
     border-radius: 5px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding:10px;
-    border:1px solid #ccc;
-    width: 100%;
-    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
     margin: 0 10px;
 }

@@ -5,7 +5,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: "index-bundle.js"
+        filename: "bundle.js"
     },
     module: {
         rules: [
@@ -18,7 +18,13 @@ module.exports = {
             test: /\.css$/,
             use: ["style-loader", "css-loader"]
         }
-        ]
+        ],
+    },
+    resolve: {
+        alias: {
+            components: path.resolve(__dirname, 'src/app/components/'),
+            services: path.resolve(__dirname, 'src/app/services/')  
+        }
     },
     plugins: [
     new HtmlWebpackPlugin({
